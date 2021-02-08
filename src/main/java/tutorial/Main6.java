@@ -15,8 +15,6 @@ public class Main6 {
         ODB odb = ODBFactory.open("neodatis.test");
 
         // Creamos la consulta
-        ICriterion iCriterion1 = Where.like("nombre", "M%");
-        ICriterion iCriterion2 = Where.gt("edad", 13);
 //        ICriterion iCriterion2 = Where.ge("edad", 13);
 //        ICriterion iCriterion2 = Where.lt("edad", 13);
 //        ICriterion iCriterion2 = Where.le("edad", 13);
@@ -24,6 +22,8 @@ public class Main6 {
         ICriterion iCriterion4 = Where.isNull("nombre");
         ICriterion iCriterion5 = Where.isNotNull("nombre");
 
+        ICriterion iCriterion1 = Where.like("nombre", "M%");
+        ICriterion iCriterion2 = Where.gt(Jugador.EDAD, 13);
         ICriterion iCriterion = new And().add(iCriterion1).add(iCriterion2);
 //        ICriterion iCriterion = new Or().add(iCriterion1).add(iCriterion2);
 

@@ -6,10 +6,16 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Jugador {
-  String nombre;
-  String deporte;
-  String ciudad;
-  int edad;
+
+  public static final String NOMBRE = "nombre";
+  public static final String DEPORTE = "deporte";
+  public static final String CIUDAD = "ciudad";
+  public static final String EDAD = "edad";
+
+  private String nombre;
+  private String deporte;
+  private String ciudad;
+  private int edad;
 
   public Jugador() {
   }
