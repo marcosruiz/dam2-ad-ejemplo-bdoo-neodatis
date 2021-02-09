@@ -18,13 +18,13 @@ public class App06ConsultaConAnd {
         // Abrimos la conexión
         ODB odb = ODBFactory.open("neodatis.test");
 
-        // Otras consultas
-//        ICriterion iCriterion2 = Where.ge("edad", 13);
-//        ICriterion iCriterion2 = Where.lt("edad", 13);
-//        ICriterion iCriterion2 = Where.le("edad", 13);
-//        ICriterion iCriterion4 = Where.isNull("nombre");
-//        ICriterion iCriterion5 = Where.isNotNull("nombre");
-//        ICriterion iCriterion = new Or().add(iCriterion1).add(iCriterion2);
+        // Otras consultas que quizás te ayuden
+        // ICriterion iCriterion = Where.ge("edad", 13);
+        // ICriterion iCriterion = Where.lt("edad", 13);
+        // ICriterion iCriterion = Where.le("edad", 13);
+        // ICriterion iCriterion = Where.isNull("nombre");
+        // ICriterion iCriterion = Where.isNotNull("nombre");
+        // ICriterion iCriterion = new Or().add(iCriterion1).add(iCriterion2);
 
         // Creamos la consulta
         ICriterion iCriterion1 = Where.like(Jugador.NOMBRE, "M%");
