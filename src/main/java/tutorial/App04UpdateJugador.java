@@ -8,7 +8,10 @@ import org.neodatis.odb.core.query.IQuery;
 import org.neodatis.odb.core.query.criteria.Where;
 import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
 
-public class Main4 {
+/**
+ * Esta clase actualiza un jugador que se llame Maria
+ */
+public class App04UpdateJugador {
     public static void main(String[] args){
         // Abrimos la conexión
         ODB odb = ODBFactory.open("neodatis.test");

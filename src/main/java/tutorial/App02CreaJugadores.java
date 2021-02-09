@@ -4,7 +4,10 @@ import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
 import org.neodatis.odb.Objects;
 
-public class Main {
+/**
+ * Esta clase crea 4 jugadores y lista todos los que haya en la base de datos.
+ */
+public class App02CreaJugadores {
   public static void main(String[] args) {
     // Creamos los jugadores
     Jugador jugador1 = new Jugador("Maria", "voleibol", "Madrid", 13);

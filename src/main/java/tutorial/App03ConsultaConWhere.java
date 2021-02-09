@@ -8,7 +8,10 @@ import org.neodatis.odb.core.query.IQuery;
 import org.neodatis.odb.core.query.criteria.Where;
 import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
 
-public class Main3 {
+/**
+ * Esta clase consulta los jugadores que practican tenis
+ */
+public class App03ConsultaConWhere {
     public static void main(String[] args){
         // Abrimos la conexión
         ODB odb = ODBFactory.open("neodatis.test");

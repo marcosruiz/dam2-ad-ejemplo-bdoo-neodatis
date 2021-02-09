@@ -3,6 +3,9 @@ package tutorial;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 public class Jugador {
@@ -11,11 +14,13 @@ public class Jugador {
   public static final String DEPORTE = "deporte";
   public static final String CIUDAD = "ciudad";
   public static final String EDAD = "edad";
+  public static final String PUNTOS = "puntos";
 
   private String nombre;
   private String deporte;
   private String ciudad;
   private int edad;
+  private List<Integer> puntos; // Lista de puntos que hace en cada partido
 
   public Jugador() {
   }
@@ -25,6 +30,12 @@ public class Jugador {
     this.deporte = deporte;
     this.ciudad = ciudad;
     this.edad = edad;
+    this.puntos = new ArrayList<>();
+  }
+
+  public Jugador(String nombre, String deporte, String ciudad, int edad, List<Integer> puntos) {
+    this( nombre,  deporte,  ciudad,  edad);
+    this.puntos = puntos;
   }
 
   @Override

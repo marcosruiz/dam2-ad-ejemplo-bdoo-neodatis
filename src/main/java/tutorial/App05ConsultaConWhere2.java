@@ -4,21 +4,23 @@ import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
 import org.neodatis.odb.Objects;
 import org.neodatis.odb.core.query.IQuery;
-import org.neodatis.odb.core.query.criteria.And;
 import org.neodatis.odb.core.query.criteria.ICriterion;
 import org.neodatis.odb.core.query.criteria.Where;
 import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
 
-public class Main7 {
+/**
+ * Esta clase consulta los jugadores que tienen 14 años de edad
+ */
+public class App05ConsultaConWhere2 {
     public static void main(String[] args){
         // Abrimos la conexión
         ODB odb = ODBFactory.open("neodatis.test");
 
         // Creamos la consulta
-        ICriterion iCriterion = Where.contain("","");
+        ICriterion iCriterion = Where.equal(Jugador.EDAD, 14);
         IQuery iQuery = new CriteriaQuery(Jugador.class, iCriterion);
 
-        // Obtenemos el iterador
+        // Obtenemos el primer resultado
         Objects<Jugador> objects = odb.getObjects(iQuery);
 
         // Iteramos hasta que no haya siguiente elemento

@@ -5,7 +5,10 @@ import org.neodatis.odb.ODBFactory;
 import org.neodatis.odb.OID;
 import org.neodatis.odb.Objects;
 
-public class Main2 {
+/**
+ * Esta clase lista los jugadores de la base de datos
+ */
+public class App01ConsultaJugadores {
   public static void main(String[] args){
     // Abrimos la conexión
     ODB odb = ODBFactory.open("neodatis.test");
