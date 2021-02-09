@@ -14,15 +14,15 @@ public class Main3 {
         ODB odb = ODBFactory.open("neodatis.test");
 
         // Creamos la consulta
-        IQuery iQuery = new CriteriaQuery(Jugador.class, Where.equal("deporte", "tenis"));
-        iQuery.orderByAsc("nombre"); // Ordena
+        IQuery iQuery = new CriteriaQuery(Jugador.class, Where.equal(Jugador.DEPORTE, "tenis"));
+        iQuery.orderByAsc(Jugador.NOMBRE); // Ordena
 
         // Obtenemos el iterador
-        Objects<Jugador> objects = odb.getObjects(iQuery);
+        Objects<Jugador> iterador = odb.getObjects(iQuery);
 
         // Iteramos para obtener todos los jugadores
-        while(objects.hasNext()){
-            Jugador j = objects.next();
+        while(iterador.hasNext()){
+            Jugador j = iterador.next();
             OID oid = odb.getObjectId(j);
             System.out.print("OID: " + oid.getObjectId() + " => ");
             System.out.println(j);

@@ -14,7 +14,7 @@ public class Main4 {
         ODB odb = ODBFactory.open("neodatis.test");
 
         // Creamos la consulta
-        IQuery iQuery = new CriteriaQuery(Jugador.class, Where.equal("nombre", "Maria"));
+        IQuery iQuery = new CriteriaQuery(Jugador.class, Where.equal(Jugador.NOMBRE, "Maria"));
 
         // Obtenemos el primer resultado
         Jugador jugador = (Jugador) odb.getObjects(iQuery).getFirst();

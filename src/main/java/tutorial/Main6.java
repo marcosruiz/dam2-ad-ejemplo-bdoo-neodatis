@@ -18,11 +18,11 @@ public class Main6 {
 //        ICriterion iCriterion2 = Where.ge("edad", 13);
 //        ICriterion iCriterion2 = Where.lt("edad", 13);
 //        ICriterion iCriterion2 = Where.le("edad", 13);
-//        ICriterion iCriterion3 = Where.contain("nombrearray", valor);
+//        ICriterion iCriterion3 = Where.contain("array", "patata");
         ICriterion iCriterion4 = Where.isNull("nombre");
         ICriterion iCriterion5 = Where.isNotNull("nombre");
 
-        ICriterion iCriterion1 = Where.like("nombre", "M%");
+        ICriterion iCriterion1 = Where.like(Jugador.NOMBRE, "M%");
         ICriterion iCriterion2 = Where.gt(Jugador.EDAD, 13);
         ICriterion iCriterion = new And().add(iCriterion1).add(iCriterion2);
 //        ICriterion iCriterion = new Or().add(iCriterion1).add(iCriterion2);

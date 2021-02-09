@@ -14,7 +14,7 @@ public class Main5 {
         ODB odb = ODBFactory.open("neodatis.test");
 
         // Creamos la consulta
-        ICriterion iCriterion = Where.equal("edad", 14);
+        ICriterion iCriterion = Where.equal(Jugador.EDAD, 14);
         IQuery iQuery = new CriteriaQuery(Jugador.class, iCriterion);
 
         // Obtenemos el primer resultado

@@ -27,8 +27,8 @@ public class Main {
 
     // Iteramos hasta que no haya siguiente elemento
     while(iterador.hasNext()){
-      Jugador j = iterador.next();
-      System.out.println(j);
+      Jugador jugador = iterador.next();
+      System.out.println(jugador);
     }
 
     // Cerramos la conexión
