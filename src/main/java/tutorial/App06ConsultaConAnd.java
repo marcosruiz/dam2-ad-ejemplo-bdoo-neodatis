@@ -34,11 +34,11 @@ public class App06ConsultaConAnd {
         IQuery iQuery = new CriteriaQuery(Jugador.class, iCriterion);
 
         // Obtenemos el iterador
-        Objects<Jugador> objects = odb.getObjects(iQuery);
+        Objects<Jugador> iterador = odb.getObjects(iQuery);
 
         // Iteramos hasta que no haya siguiente elemento
-        while(objects.hasNext()){
-            Jugador j = objects.next();
+        while(iterador.hasNext()){
+            Jugador j = iterador.next();
             System.out.println(j);
         }
 
