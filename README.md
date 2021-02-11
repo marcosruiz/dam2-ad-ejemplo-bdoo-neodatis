@@ -14,7 +14,7 @@ Clases ejecutables:
 - App03ConsultaConWhere:  Esta clase consulta los jugadores que practican tenis.
 - App04ConsultaConWhere2: Esta clase consulta los jugadores que tienen 14 años de edad.
 - App05UpdateJugador: Esta clase actualiza un jugador que se llame Maria.
-- App06ConsultaConAnd: Esta clase consulta los jugadores que tienen 14 años de edad.
+- App06ConsultaConAnd: Esta clase consulta los jugadores cuyo nombre empieza por M y tienen 14 años de edad.
 - App07CreaEquiposYJugadores: Esta clase crea 6 jugadores y dos equipos con 3 jugadores cada uno.
 - App08ConsultaEquipos: Esta clase consulta los equipos que contengan un jugador en específico.
 
