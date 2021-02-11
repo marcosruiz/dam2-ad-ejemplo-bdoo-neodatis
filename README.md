@@ -1,5 +1,5 @@
 # dam2-ad-ejemplo-bdoo-neodatis
-Ejemplo de uso de la Base de Datos Orientada a Objetos NeoDatis
+Ejemplo de uso de la Base de Datos Orientada a Objetos (BDOO) NeoDatis
 
 - Ciclo: DAM
 - Módulo: AD
