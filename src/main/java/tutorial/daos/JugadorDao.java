@@ -3,7 +3,11 @@ package tutorial.daos;
 import org.neodatis.odb.ODB;
 import org.neodatis.odb.OID;
 import org.neodatis.odb.Objects;
+import tutorial.domain.Equipo;
 import tutorial.domain.Jugador;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Esta clase se encarga de realizar las consultas a la base de datos sobre los objetos Jugador.
@@ -16,17 +20,19 @@ public class JugadorDao {
     this.odb = odb;
   }
 
-  public void listarJugadores() {
+  public List<Jugador> getAllJugadores() {
+    List<Jugador> jugadores = new ArrayList<>();
+
     // Obtenemos el iterador
     Objects<Jugador> objects = this.odb.getObjects(Jugador.class);
     System.out.printf("%d Jugadores: %n", objects.size());
 
     // Iteramos hasta que no haya siguiente elemento
     while(objects.hasNext()){
-      Jugador j = objects.next();
-      OID oid = this.odb.getObjectId(j);
-      System.out.print("OID: " + oid.getObjectId() + " => ");
-      System.out.println(j);
+      Jugador jugador = objects.next();
+      jugadores.add(jugador);
     }
+
+    return jugadores;
   }
 }

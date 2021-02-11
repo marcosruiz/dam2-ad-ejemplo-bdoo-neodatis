@@ -2,8 +2,6 @@ package tutorial;
 
 import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
-import org.neodatis.odb.OID;
-import org.neodatis.odb.Objects;
 import tutorial.daos.EquipoDao;
 import tutorial.daos.JugadorDao;
 import tutorial.domain.Equipo;
@@ -48,11 +46,11 @@ public class App07CreaEquiposYJugadores {
 
         // Listamos equipos
         EquipoDao equipoDao = new EquipoDao(odb);
-        equipoDao.listarEquipos();
+        Utils.listarEquipos(equipoDao.getAllEquipos());
 
         // Listamos jugadores
         JugadorDao jugadorDao = new JugadorDao(odb);
-        jugadorDao.listarJugadores();
+        Utils.listarJugadores(jugadorDao.getAllJugadores());
 
         // Cerramos la conexión
         odb.close();
