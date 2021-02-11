@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * En esta clase ya jugamos con equipos que contienen listas de jugadores.
+ * En esta clase creamos 6 jugadores y dos equipos con 3 jugadores cada uno
  */
 public class App07CreaEquiposYJugadores {
     public static void main(String[] args){

@@ -11,10 +11,12 @@ import tutorial.domain.Equipo;
 import tutorial.domain.Jugador;
 
 /**
- * En esta clase ya jugamos con equipos que contienen listas de jugadores.
+ * En esta clase realizamos una consulta Where.contain.
+ * En este caso la consulta busca los equipos que contengan un jugador en específico
+ * Es necesario ejecutar App07CreaEquiposYJugadores para obtener un resultado.
  */
 public class App08ConsultaEquipos {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // Abrimos la conexión
         ODB odb = ODBFactory.open("neodatis.test");
 
@@ -24,7 +26,7 @@ public class App08ConsultaEquipos {
         System.out.println(jugador);
 
         // Creamos la consulta
-        IQuery iQuery2 = odb.criteriaQuery(Equipo.class, Where.contain(Equipo.JUGADORES,jugador));
+        IQuery iQuery2 = odb.criteriaQuery(Equipo.class, Where.contain(Equipo.JUGADORES, jugador));
 
         // Obtenemos el iterador
         Objects<Equipo> iterador2 = odb.getObjects(iQuery2);
