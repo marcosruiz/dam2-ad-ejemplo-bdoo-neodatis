@@ -8,7 +8,7 @@ import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
 import tutorial.domain.Jugador;
 
 /**
- * Esta clase actualiza un jugador que se llame Maria
+ * Esta clase actualiza un jugador que se llame Maria.
  */
 public class App05UpdateJugador {
     public static void main(String[] args){

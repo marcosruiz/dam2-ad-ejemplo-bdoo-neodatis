@@ -5,6 +5,10 @@ import lombok.Setter;
 
 import java.util.List;
 
+/**
+ * Esta clase representa un equipo.
+ */
+
 @Getter
 @Setter
 public class Equipo {

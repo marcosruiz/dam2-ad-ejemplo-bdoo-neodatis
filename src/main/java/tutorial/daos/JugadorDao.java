@@ -5,6 +5,9 @@ import org.neodatis.odb.OID;
 import org.neodatis.odb.Objects;
 import tutorial.domain.Jugador;
 
+/**
+ * Esta clase se encarga de realizar las consultas a la base de datos sobre los objetos Jugador.
+ */
 public class JugadorDao {
 
   private ODB odb;

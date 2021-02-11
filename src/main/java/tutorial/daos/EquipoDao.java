@@ -5,6 +5,9 @@ import org.neodatis.odb.OID;
 import org.neodatis.odb.Objects;
 import tutorial.domain.Equipo;
 
+/**
+ * Esta clase se encarga de realizar las consultas a la base de datos sobre los objetos Equipo.
+ */
 public class EquipoDao {
 
   private ODB odb;

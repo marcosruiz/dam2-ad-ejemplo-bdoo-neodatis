@@ -7,7 +7,7 @@ import org.neodatis.odb.Objects;
 import tutorial.domain.Jugador;
 
 /**
- * Esta clase lista los jugadores de la base de datos
+ * Esta clase lista los jugadores de la base de datos.
  */
 public class App01ConsultaJugadores {
   public static void main(String[] args){

@@ -10,7 +10,7 @@ import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
 import tutorial.domain.Jugador;
 
 /**
- * Esta clase consulta los jugadores que practican tenis
+ * Esta clase consulta los jugadores que practican tenis.
  */
 public class App03ConsultaConWhere {
     public static void main(String[] args){

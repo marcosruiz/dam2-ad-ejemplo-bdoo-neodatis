@@ -11,8 +11,7 @@ import tutorial.domain.Equipo;
 import tutorial.domain.Jugador;
 
 /**
- * En esta clase realizamos una consulta Where.contain.
- * En este caso la consulta busca los equipos que contengan un jugador en específico
+ * Esta clase consulta los equipos que contengan un jugador en específico.
  * Es necesario ejecutar App07CreaEquiposYJugadores para obtener un resultado.
  */
 public class App08ConsultaEquipos {

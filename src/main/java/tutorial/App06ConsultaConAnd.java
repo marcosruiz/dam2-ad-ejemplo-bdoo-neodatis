@@ -12,7 +12,7 @@ import tutorial.domain.Jugador;
 
 
 /**
- * Esta clase consulta los jugadores que tienen 14 años de edad
+ * Esta clase consulta los jugadores que tienen 14 años de edad.
  */
 public class App06ConsultaConAnd {
     public static void main(String[] args){

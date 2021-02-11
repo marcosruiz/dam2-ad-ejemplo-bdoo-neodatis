@@ -5,6 +5,9 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * Esta clase representa un jugador.
+ */
 
 @Getter
 @Setter
