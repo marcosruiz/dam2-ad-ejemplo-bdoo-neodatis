@@ -1,32 +1,29 @@
-package tutorial;
+package tutorial.daos;
 
 import org.neodatis.odb.ODB;
-import org.neodatis.odb.ODBFactory;
 import org.neodatis.odb.OID;
 import org.neodatis.odb.Objects;
 import tutorial.domain.Jugador;
 
-/**
- * Esta clase lista los jugadores de la base de datos
- */
-public class App01ConsultaJugadores {
-  public static void main(String[] args){
-    // Abrimos la conexión
-    ODB odb = ODBFactory.open("neodatis.test");
+public class JugadorDao {
 
+  private ODB odb;
+
+  public JugadorDao(ODB odb){
+    this.odb = odb;
+  }
+
+  public void listarJugadores() {
     // Obtenemos el iterador
-    Objects<Jugador> objects = odb.getObjects(Jugador.class);
+    Objects<Jugador> objects = this.odb.getObjects(Jugador.class);
     System.out.printf("%d Jugadores: %n", objects.size());
 
     // Iteramos hasta que no haya siguiente elemento
     while(objects.hasNext()){
       Jugador j = objects.next();
-      OID oid = odb.getObjectId(j);
+      OID oid = this.odb.getObjectId(j);
       System.out.print("OID: " + oid.getObjectId() + " => ");
       System.out.println(j);
     }
-
-    // Cerramos la conexión
-    odb.close();
   }
 }

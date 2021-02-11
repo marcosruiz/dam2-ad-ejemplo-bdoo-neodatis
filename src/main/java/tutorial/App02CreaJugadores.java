@@ -3,6 +3,7 @@ package tutorial;
 import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
 import org.neodatis.odb.Objects;
+import tutorial.domain.Jugador;
 
 /**
  * Esta clase crea 4 jugadores y lista todos los que haya en la base de datos.
