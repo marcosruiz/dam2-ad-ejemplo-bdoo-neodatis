@@ -4,7 +4,7 @@ import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
 import org.neodatis.odb.OID;
 import org.neodatis.odb.Objects;
-import tutorial.domain.Jugador;
+import tutorial.dominio.Jugador;
 
 /**
  * Esta clase lista los jugadores de la base de datos.

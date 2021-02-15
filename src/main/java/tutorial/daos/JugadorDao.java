@@ -1,10 +1,8 @@
 package tutorial.daos;
 
 import org.neodatis.odb.ODB;
-import org.neodatis.odb.OID;
 import org.neodatis.odb.Objects;
-import tutorial.domain.Equipo;
-import tutorial.domain.Jugador;
+import tutorial.dominio.Jugador;
 
 import java.util.ArrayList;
 import java.util.List;

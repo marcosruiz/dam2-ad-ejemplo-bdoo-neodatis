@@ -1,4 +1,4 @@
-package tutorial.domain;
+package tutorial.dominio;
 
 import lombok.Getter;
 import lombok.Setter;

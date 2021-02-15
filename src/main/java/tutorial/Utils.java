@@ -1,9 +1,7 @@
 package tutorial;
 
-import org.neodatis.odb.OID;
-import org.neodatis.odb.Objects;
-import tutorial.domain.Equipo;
-import tutorial.domain.Jugador;
+import tutorial.dominio.Equipo;
+import tutorial.dominio.Jugador;
 
 import java.util.List;
 

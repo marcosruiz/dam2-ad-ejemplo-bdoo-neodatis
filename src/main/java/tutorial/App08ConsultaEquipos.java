@@ -6,9 +6,8 @@ import org.neodatis.odb.Objects;
 import org.neodatis.odb.core.query.IQuery;
 import org.neodatis.odb.core.query.criteria.Where;
 import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
-import tutorial.daos.EquipoDao;
-import tutorial.domain.Equipo;
-import tutorial.domain.Jugador;
+import tutorial.dominio.Equipo;
+import tutorial.dominio.Jugador;
 
 /**
  * Esta clase consulta los equipos que contengan un jugador en específico.

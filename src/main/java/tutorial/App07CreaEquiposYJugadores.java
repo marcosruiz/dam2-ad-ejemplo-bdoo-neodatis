@@ -4,8 +4,8 @@ import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
 import tutorial.daos.EquipoDao;
 import tutorial.daos.JugadorDao;
-import tutorial.domain.Equipo;
-import tutorial.domain.Jugador;
+import tutorial.dominio.Equipo;
+import tutorial.dominio.Jugador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
